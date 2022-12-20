@@ -9,7 +9,19 @@
   <h1>{{school}}</h1>
   
   <h2>{{getFullname()}}</h2>
+  <h3>{{hobby}}</h3>
+   <h4>{{profile}}</h4>
 
+
+<!-- เรียกอาร์เรย์-->
+   <ul>
+      <li> {{hobby[0]}}</li>
+      <li> {{hobby[1] }}</li>
+      <li> {{hobby[2] }}</li>
+      <li> {{hobby[3] }}</li>
+      <li> {{hobby[4] }}</li>
+    </ul>
+<!-- เรียกอาร์เรย์-->
 
 </template>
 
@@ -29,7 +41,7 @@ export default {
       major:"สาขา : นักพัฒนาซอฟต์แวร์คอมพิวเตอร์",
       school:"วิทยาลัย : วิทยาลัยเทคโนโลยีโปลิเทคนิคลานนา เชียงใหม่",
 
-      hobby : ["เล่นเกมส์,นอน"],
+      hobby : ["เล่นเกมส์","นอน","กินข้าว","ดูหนัง","เล่นกีฬา"],
       profile : {gender: "male", weiht:50 , hight:170, status: false}
   }
   },
