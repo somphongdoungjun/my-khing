@@ -1,5 +1,5 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
+  <img alt="Vue logo" src="./assets/logo.jpg">
   <h1>{{firstname}}  {{ lastname}} </h1>
   <h1>{{nickname}}</h1>
   <h1>{{Age}}</h1>
