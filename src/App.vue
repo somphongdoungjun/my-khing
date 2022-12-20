@@ -7,6 +7,9 @@
   <h1>{{room}}</h1>
   <h1>{{major}}</h1>
   <h1>{{school}}</h1>
+  
+  <h2>{{getFullname()}}</h2>
+
 
 </template>
 
@@ -15,7 +18,7 @@
 
 export default {
   name: 'App',
-  data(){
+  data(){ //เรียกเฉพาะข้อมูล
     return{
       firstname:"ชื่อ - สกุล : สมพงศ์",
       lastname:"ดวงจันทร์",
@@ -23,9 +26,17 @@ export default {
       Age:"อายุ 20 ปี",
       tel:"เบอร์โทรศัพท์ : 0973782270",
       room: "ห้อง : it5102",
-      major:"สาขา : Informationtecnology",
-      school:"Lannapoly"
+      major:"สาขา : นักพัฒนาซอฟต์แวร์คอมพิวเตอร์",
+      school:"วิทยาลัย : วิทยาลัยเทคโนโลยีโปลิเทคนิคลานนา เชียงใหม่",
+
+      hobby : ["เล่นเกมส์,นอน"],
+      profile : {gender: "male", weiht:50 , hight:170, status: false}
   }
+  },
+  methods :{ //เรียกฟังก์ชั่น
+    getFullname(){
+      return this.firstname + this.lastname //เรียกมาจาก data ด้านบน
+    }
   }
 }
 </script>
